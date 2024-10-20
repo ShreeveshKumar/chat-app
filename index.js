@@ -1,4 +1,3 @@
-// Import necessary modules
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io'); // keep same version as in frontend for easy connection (socket.io v4.6.1)
@@ -113,10 +112,8 @@ socket.on('broadcast', () => {
     }
 });
 
-// Define the port for the server to listen on
 const PORT = 8000;
 
-// Start the server and listen on the defined port
 server.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`); // Log message to indicate the server is running
 });
